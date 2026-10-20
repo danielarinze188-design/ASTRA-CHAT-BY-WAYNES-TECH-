@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: astra-chatbot
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: GEMINI_MODEL
+        value: gemini-3.5-flash
+      - key: NODE_VERSION
+        value: 20

@@ -1,0 +1,5 @@
+/setdescription
+Astra is a professional AI assistant. Ask questions, write and debug code, and analyze images, PDFs and files, with answers streamed live.
+
+/setabouttext
+Astra - intelligent, precise, instant. Your professional AI assistant.
